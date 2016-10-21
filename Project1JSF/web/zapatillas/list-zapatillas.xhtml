@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:p="http://primefaces.org/ui">
+    <h:head>
+        <title>#{str.listShoesTitle}</title>
+    </h:head>
+    <h:body>
+        
+        
+        <ui:composition template="/templates/template.xhtml">
+             <ui:define name="contenido">
+                 <h2>#{str.listShoesTitle}</h2>
+                <h:form>
+                    <p:commandButton value="#{str.buttonAdd}" 
+                                     action="#{zapatillaBean.iniciar()}"></p:commandButton>
+                </h:form>
+                
+                 <p:dataTable value="#{zapatillaBean.zapatillas}" var="z">
+                     <p:column headerText="#{str.action}">
+                        <h:form>
+                            <p:commandButton value="#{str.buttonEdit}"
+                                             action="#{zapatillaBean.editar(z)}"></p:commandButton>
+                        </h:form>
+                    </p:column>
+                    
+                     <p:column headerText="#{str.formShoesName}">
+                         <p:outputLabel value="#{z.nombreZapatilla}"></p:outputLabel>
+                    </p:column>
+                     
+                     <p:column headerText="#{str.formShoesColor}">
+                         <p:outputLabel value="#{z.color}"></p:outputLabel>
+                    </p:column>
+                     <p:column headerText="#{str.formShoesMarc}">
+                         <p:outputLabel value="#{z.marca}"></p:outputLabel>
+                    </p:column>
+                     
+                </p:dataTable> 
+             </ui:define>
+        </ui:composition>
+    </h:body>
+</html>
+

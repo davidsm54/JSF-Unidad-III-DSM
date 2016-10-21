@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:p="http://primefaces.org/ui">
+    <h:head>
+        <title>#{str.listCoursesHeader}</title>
+    </h:head>
+    <h:body>
+        <h2>#{str.listCoursesHeader}</h2>
+        
+        <ui:composition template="/templates/template.xhtml">
+             <ui:define name="contenido">
+                <h:form>
+                    <p:commandButton value="#{str.buttonAdd}" 
+                                     action="#{cursoBean.iniciar()}"></p:commandButton>
+                </h:form>
+                
+                 <p:dataTable value="#{cursoBean.cursos}" var="c">
+                     <p:column headerText="#{str.action}">
+                        <h:form>
+                            <p:commandButton value="#{str.buttonEdit}"
+                                             action="#{cursoBean.editar(c)}"></p:commandButton>
+                        </h:form>
+                    </p:column>
+                    
+                     <p:column headerText="#{str.listCoursesHeader}">
+                         <p:outputLabel value="#{c.nombreCurso}"></p:outputLabel>
+                    </p:column>
+                     
+                     <p:column headerText="#{str.formCoursesDuracion}">
+                          <p:outputLabel value="#{c.duracion}"></p:outputLabel>
+                    </p:column>
+                     <p:column headerText="#{str.formCoursesCuatrimestre}">
+                          <p:outputLabel value="#{c.cuatrimestre}"></p:outputLabel>
+                    </p:column>
+                     
+                </p:dataTable> 
+             </ui:define>
+        </ui:composition>
+    </h:body>
+</html>
+

@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <h:head>
+        <title>#{str.formLadyTitle}</title>
+    </h:head>
+    <h:body>
+        <ui:composition template="/templates/template.xhtml">
+           <ui:define name="contenido">
+                <h2>#{str.formLadyTitle}</h2>
+                <p:fieldset legend="#{str.formLadyLegend}">
+                    
+                    <h:form>
+                        <h:panelGrid columns="1">
+                            <p:inputText placeholder="#{str.formLadyName}" value="#{quinceanieraBean.quinceaniera.nombreQuinceaniera}">
+                        </p:inputText>
+                            <p:inputText placeholder="#{str.formLadyDream}" value="#{quinceanieraBean.quinceaniera.suenio}">
+                        </p:inputText>
+                            <p:inputText placeholder="#{str.formLadyFamily}" value="#{quinceanieraBean.quinceaniera.familia}">
+                        </p:inputText>
+                        
+                            <p:selectOneMenu value="#{quinceanieraBean.quinceaniera.vestido.idVestido}">
+                                <f:selectItems value="#{quinceanieraBean.vestidos}" 
+                                               var="v" itemLabel="#{v.marca}" itemValue="#{v.idVestido}">
+                                </f:selectItems>
+                        </p:selectOneMenu>
+                           
+                       </h:panelGrid>
+                        
+                        <p:commandButton value="#{str.buttonSave}" action="#{quinceanieraBean.guardar()}">
+                        </p:commandButton>
+                        <p:commandButton value="#{str.buttonDelete}" action="#{quinceanieraBean.eliminar()}">
+                        </p:commandButton>
+                        <p:commandButton value="#{str.buttonCancel}" action="#{quinceanieraBean.cancelar()}">
+                        </p:commandButton>
+                    </h:form>
+                </p:fieldset>
+           </ui:define>
+         </ui:composition>  
+    </h:body>
+</html>
+

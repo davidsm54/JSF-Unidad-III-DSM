@@ -1,0 +1,405 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<faces-config version="2.2"
+              xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+              xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-facesconfig_2_2.xsd">
+
+    
+    <application>
+        <resource-bundle>
+            <base-name>utng.configuracion.strings</base-name>
+            <var>str</var>
+        </resource-bundle>
+    </application>
+    
+    <navigation-rule>
+        <from-view-id>*</from-view-id>
+        <navigation-case>
+            <from-outcome>Inicio</from-outcome>
+            <to-view-id>/index.xhtml</to-view-id>
+        </navigation-case>
+        <navigation-case>
+            <from-outcome>Usuarios</from-outcome>
+            <to-view-id>/usuarios/list-usuarios.xhtml</to-view-id>
+        </navigation-case>
+        <navigation-case>
+            <from-outcome>Roles</from-outcome>
+            <to-view-id>/roles/list-roles.xhtml</to-view-id>
+        </navigation-case>
+        <navigation-case>
+            <from-outcome>Modulos</from-outcome>
+            <to-view-id>/modulos/list-modulos.xhtml</to-view-id>
+        </navigation-case>
+        
+        <navigation-case>
+            <from-outcome>Cursos</from-outcome>
+            <to-view-id>/cursos/list-cursos.xhtml</to-view-id>
+        </navigation-case>
+        
+        <navigation-case>
+            <from-outcome>Instructores</from-outcome>
+            <to-view-id>/instructores/list-instructores.xhtml</to-view-id>
+        </navigation-case>
+        
+        <navigation-case>
+            <from-outcome>Fiestas</from-outcome>
+            <to-view-id>/fiestas/list-fiestas.xhtml</to-view-id>
+        </navigation-case>
+        
+        <navigation-case>
+            <from-outcome>Arreglos</from-outcome>
+            <to-view-id>/arreglos/list-arreglos.xhtml</to-view-id>
+        </navigation-case>
+        
+        <navigation-case>
+            <from-outcome>Zapatillas</from-outcome>
+            <to-view-id>/zapatillas/list-zapatillas.xhtml</to-view-id>
+        </navigation-case>
+        
+        <navigation-case>
+            <from-outcome>Vestidos</from-outcome>
+            <to-view-id>/vestidos/list-vestidos.xhtml</to-view-id>
+        </navigation-case>
+        
+        <navigation-case>
+            <from-outcome>Quinseañeras</from-outcome>
+            <to-view-id>/quinceanieras/list-quinceanieras.xhtml</to-view-id>
+        </navigation-case>
+    </navigation-rule>
+    
+    
+    
+    <navigation-rule>
+        <from-view-id>/usuarios/form-usuarios.xhtml</from-view-id>
+        <navigation-case>
+            <from-outcome>Guardar</from-outcome>
+            <to-view-id>/usuarios/list-usuarios.xhtml</to-view-id>
+        </navigation-case>
+        <navigation-case>
+            <from-outcome>Eliminar</from-outcome>
+            <to-view-id>/usuarios/list-usuarios.xhtml</to-view-id>
+        </navigation-case>
+        <navigation-case>
+            <from-outcome>Cancelar</from-outcome>
+            <to-view-id>/usuarios/list-usuarios.xhtml</to-view-id>
+        </navigation-case>
+    </navigation-rule>
+    <navigation-rule>
+        <from-view-id>/usuarios/list-usuarios.xhtml</from-view-id>
+        <navigation-case>
+            <from-outcome>Iniciar</from-outcome>
+            <to-view-id>/usuarios/form-usuarios.xhtml</to-view-id>
+        </navigation-case>
+        <navigation-case>
+            <from-outcome>Editar</from-outcome>
+            <to-view-id>/usuarios/form-usuarios.xhtml</to-view-id>
+        </navigation-case>
+    </navigation-rule>
+    <navigation-rule>
+        <from-view-id>/roles/form-roles.xhtml</from-view-id>
+        <navigation-case>
+            <from-outcome>Guardar</from-outcome>
+            <to-view-id>/roles/list-roles.xhtml</to-view-id>
+        </navigation-case>
+        <navigation-case>
+            <from-outcome>Eliminar</from-outcome>
+            <to-view-id>/roles/list-roles.xhtml</to-view-id>
+        </navigation-case>
+        <navigation-case>
+            <from-outcome>Cancelar</from-outcome>
+            <to-view-id>/roles/list-roles.xhtml</to-view-id>
+        </navigation-case>
+    </navigation-rule>
+    <navigation-rule>
+        <from-view-id>/roles/list-roles.xhtml</from-view-id>
+        <navigation-case>
+            <from-outcome>Iniciar</from-outcome>
+            <to-view-id>/roles/form-roles.xhtml</to-view-id>
+        </navigation-case>
+        <navigation-case>
+            <from-outcome>Editar</from-outcome>
+            <to-view-id>/roles/form-roles.xhtml</to-view-id>
+        </navigation-case>
+    </navigation-rule>
+    <navigation-rule>
+        <from-view-id>/modulos/form-modulos.xhtml</from-view-id>
+        <navigation-case>
+            <from-outcome>Guardar</from-outcome>
+            <to-view-id>/modulos/list-modulos.xhtml</to-view-id>
+        </navigation-case>
+        <navigation-case>
+            <from-outcome>Eliminar</from-outcome>
+            <to-view-id>/modulos/list-modulos.xhtml</to-view-id>
+        </navigation-case>
+        <navigation-case>
+            <from-outcome>Cancelar</from-outcome>
+            <to-view-id>/modulos/list-modulos.xhtml</to-view-id>
+        </navigation-case>
+    </navigation-rule>
+    <navigation-rule>
+        <from-view-id>/modulos/list-modulos.xhtml</from-view-id>
+        <navigation-case>
+            <from-outcome>Iniciar</from-outcome>
+            <to-view-id>/modulos/form-modulos.xhtml</to-view-id>
+        </navigation-case>
+        <navigation-case>
+            <from-outcome>Editar</from-outcome>
+            <to-view-id>/modulos/form-modulos.xhtml</to-view-id>
+        </navigation-case>
+    </navigation-rule>
+     <!--Cursos-->
+    
+    
+      <!--Inicia la navegacion de instructores-->    
+    <navigation-rule>
+        <from-view-id>/instructores/form-instructores.xhtml</from-view-id>
+    
+        <navigation-case>
+            <from-outcome>Guardar</from-outcome>
+            <to-view-id>/instructores/list-instructores.xhtml</to-view-id>
+        </navigation-case>
+        
+        <navigation-case>
+            <from-outcome>Eliminar</from-outcome>
+            <to-view-id>/instructores/list-instructores.xhtml</to-view-id>
+        </navigation-case>
+        
+        <navigation-case>
+            <from-outcome>Cancelar</from-outcome>
+            <to-view-id>/instructores/list-instructores.xhtml</to-view-id>
+        </navigation-case>
+    </navigation-rule>
+    
+    <navigation-rule>
+        <from-view-id>/instructores/list-instructores.xhtml</from-view-id>
+        
+        <navigation-case>
+            <from-outcome>Iniciar</from-outcome>
+            <to-view-id>/instructores/form-instructores.xhtml</to-view-id>
+        </navigation-case>
+        
+         <navigation-case>
+            <from-outcome>Editar</from-outcome>
+            <to-view-id>/instructores/form-instructores.xhtml</to-view-id>
+        </navigation-case>
+    </navigation-rule>
+    
+    <!--Inicia la edicion de cursos-->
+    <navigation-rule>
+        <from-view-id>/cursos/list-cursos.xhtml</from-view-id>
+        
+        <navigation-case>
+            <from-outcome>Iniciar</from-outcome>
+            <to-view-id>/cursos/form-cursos.xhtml</to-view-id>
+        </navigation-case>
+        
+         <navigation-case>
+            <from-outcome>Editar</from-outcome>
+            <to-view-id>/cursos/form-cursos.xhtml</to-view-id>
+        </navigation-case>
+    </navigation-rule>
+    
+    <navigation-rule>
+        <from-view-id>/cursos/form-cursos.xhtml</from-view-id>
+    
+        <navigation-case>
+            <from-outcome>Guardar</from-outcome>
+            <to-view-id>/cursos/list-cursos.xhtml</to-view-id>
+        </navigation-case>
+        
+        <navigation-case>
+            <from-outcome>Eliminar</from-outcome>
+            <to-view-id>/cursos/list-cursos.xhtml</to-view-id>
+        </navigation-case>
+        
+        <navigation-case>
+            <from-outcome>Cancelar</from-outcome>
+            <to-view-id>/cursos/list-cursos.xhtml</to-view-id>
+        </navigation-case>
+    </navigation-rule>
+    
+    <!--arreglos-->
+     <navigation-rule>
+        <from-view-id>/arreglos/form-arreglos.xhtml</from-view-id>
+    
+        <navigation-case>
+            <from-outcome>Guardar</from-outcome>
+            <to-view-id>/arreglos/list-arreglos.xhtml</to-view-id>
+        </navigation-case>
+        
+        <navigation-case>
+            <from-outcome>Eliminar</from-outcome>
+            <to-view-id>/arreglos/list-arreglos.xhtml</to-view-id>
+        </navigation-case>
+        
+        <navigation-case>
+            <from-outcome>Cancelar</from-outcome>
+            <to-view-id>/arreglos/list-arreglos.xhtml</to-view-id>
+        </navigation-case>
+    </navigation-rule>
+    
+    <navigation-rule>
+        <from-view-id>/arreglos/list-arreglos.xhtml</from-view-id>
+        
+        <navigation-case>
+            <from-outcome>Iniciar</from-outcome>
+            <to-view-id>/arreglos/form-arreglos.xhtml</to-view-id>
+        </navigation-case>
+        
+         <navigation-case>
+            <from-outcome>Editar</from-outcome>
+            <to-view-id>/arreglos/form-arreglos.xhtml</to-view-id>
+        </navigation-case>
+    </navigation-rule>
+    
+    <!--Fiestas-->
+    <navigation-rule>
+        <from-view-id>/fiestas/list-fiestas.xhtml</from-view-id>
+        
+        <navigation-case>
+            <from-outcome>Iniciar</from-outcome>
+            <to-view-id>/fiestas/form-fiestas.xhtml</to-view-id>
+        </navigation-case>
+        
+         <navigation-case>
+            <from-outcome>Editar</from-outcome>
+            <to-view-id>/fiestas/form-fiestas.xhtml</to-view-id>
+        </navigation-case>
+    </navigation-rule>
+    
+    <navigation-rule>
+        <from-view-id>/fiestas/form-fiestas.xhtml</from-view-id>
+    
+        <navigation-case>
+            <from-outcome>Guardar</from-outcome>
+            <to-view-id>/fiestas/list-fiestas.xhtml</to-view-id>
+        </navigation-case>
+        
+        <navigation-case>
+            <from-outcome>Eliminar</from-outcome>
+            <to-view-id>/fiestas/list-fiestas.xhtml</to-view-id>
+        </navigation-case>
+        
+        <navigation-case>
+            <from-outcome>Cancelar</from-outcome>
+            <to-view-id>/fiestas/list-fiestas.xhtml</to-view-id>
+        </navigation-case>
+    </navigation-rule>
+    
+    <!--Vestidos-->
+    <navigation-rule>
+        <from-view-id>/vestidos/list-vestidos.xhtml</from-view-id>
+        
+        <navigation-case>
+            <from-outcome>Iniciar</from-outcome>
+            <to-view-id>/vestidos/form-vestidos.xhtml</to-view-id>
+        </navigation-case>
+        
+         <navigation-case>
+            <from-outcome>Editar</from-outcome>
+            <to-view-id>/vestidos/form-vestidos.xhtml</to-view-id>
+        </navigation-case>
+    </navigation-rule>
+    
+    <navigation-rule>
+        <from-view-id>/vestidos/form-vestidos.xhtml</from-view-id>
+    
+        <navigation-case>
+            <from-outcome>Guardar</from-outcome>
+            <to-view-id>/vestidos/list-vestidos.xhtml</to-view-id>
+        </navigation-case>
+        
+        <navigation-case>
+            <from-outcome>Eliminar</from-outcome>
+            <to-view-id>/vestidos/list-vestidos.xhtml</to-view-id>
+        </navigation-case>
+        
+        <navigation-case>
+            <from-outcome>Cancelar</from-outcome>
+            <to-view-id>/vestidos/list-vestidos.xhtml</to-view-id>
+        </navigation-case>
+    </navigation-rule>
+    
+    <!--Zapatillas-->
+    <navigation-rule>
+        <from-view-id>/zapatillas/list-zapatillas.xhtml</from-view-id>
+        
+        <navigation-case>
+            <from-outcome>Iniciar</from-outcome>
+            <to-view-id>/zapatillas/form-zapatillas.xhtml</to-view-id>
+        </navigation-case>
+        
+         <navigation-case>
+            <from-outcome>Editar</from-outcome>
+            <to-view-id>/zapatillas/form-zapatillas.xhtml</to-view-id>
+        </navigation-case>
+    </navigation-rule>
+    
+    <navigation-rule>
+        <from-view-id>/zapatillas/form-zapatillas.xhtml</from-view-id>
+    
+        <navigation-case>
+            <from-outcome>Guardar</from-outcome>
+            <to-view-id>/zapatillas/list-zapatillas.xhtml</to-view-id>
+        </navigation-case>
+        
+        <navigation-case>
+            <from-outcome>Eliminar</from-outcome>
+            <to-view-id>/zapatillas/list-zapatillas.xhtml</to-view-id>
+        </navigation-case>
+        
+        <navigation-case>
+            <from-outcome>Cancelar</from-outcome>
+            <to-view-id>/zapatillas/list-zapatillas.xhtml</to-view-id>
+        </navigation-case>
+    </navigation-rule>
+    
+    <!--Quinceañera-->
+    <navigation-rule>
+        <from-view-id>/quinceanieras/form-quinceanieras.xhtml</from-view-id>
+    
+        <navigation-case>
+            <from-outcome>Guardar</from-outcome>
+            <to-view-id>/quinceanieras/list-quinceanieras.xhtml</to-view-id>
+        </navigation-case>
+        
+        <navigation-case>
+            <from-outcome>Eliminar</from-outcome>
+            <to-view-id>/quinceanieras/list-quinceanieras.xhtml</to-view-id>
+        </navigation-case>
+        
+        <navigation-case>
+            <from-outcome>Cancelar</from-outcome>
+            <to-view-id>/quinceanieras/list-quinceanieras.xhtml</to-view-id>
+        </navigation-case>
+    </navigation-rule>
+    
+    <navigation-rule>
+        <from-view-id>/quinceanieras/list-quinceanieras.xhtml</from-view-id>
+        
+        <navigation-case>
+            <from-outcome>Iniciar</from-outcome>
+            <to-view-id>/quinceanieras/form-quinceanieras.xhtml</to-view-id>
+        </navigation-case>
+        
+         <navigation-case>
+            <from-outcome>Editar</from-outcome>
+            <to-view-id>/quinceanieras/form-quinceanieras.xhtml</to-view-id>
+        </navigation-case>
+    </navigation-rule>
+    
+    <!--Verificacion de loggeo-->
+    <navigation-rule>
+        <from-view-id>/login.xhtml</from-view-id>
+        <navigation-case>
+            <from-outcome>Correcto</from-outcome>
+            <to-view-id>/index.xhtml</to-view-id>
+        </navigation-case>
+        <navigation-case>
+            <from-outcome>Incorrecto</from-outcome>
+            <to-view-id>/login.xhtml</to-view-id>
+        </navigation-case>
+    </navigation-rule>
+    
+   
+</faces-config>
