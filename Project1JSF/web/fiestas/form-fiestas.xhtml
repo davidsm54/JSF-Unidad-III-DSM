@@ -15,11 +15,11 @@
                 <p:fieldset legend="#{str.formPartiesLegend}">
                     
                     <h:form>
-                        <p:inputText placeholder="#{str.formPartiesType}" value="#{cursoBean.curso.nombreCurso}">
+                        <p:inputText placeholder="#{str.formPartiesType}" value="#{fiestaBean.fiesta.tipoFiesta}">
                         </p:inputText>
-                        <p:inputText placeholder="#{str.formPartiesDuration}" value="#{cursoBean.curso.duracion}">
+                        <p:inputText placeholder="#{str.formPartiesDuration}" value="#{fiestaBean.fiesta.duracion}">
                         </p:inputText>
-                        <p:inputText placeholder="#{str.formPartiesGuest}" value="#{cursoBean.curso.cuatrimestre}">
+                        <p:inputText placeholder="#{str.formPartiesGuest}" value="#{fiestaBean.fiesta.invitados}">
                         </p:inputText>
                         
                         <p:commandButton value="#{str.buttonSave}" action="#{fiestaBean.guardar()}">

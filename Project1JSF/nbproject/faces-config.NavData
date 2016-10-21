@@ -1,6 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scene Scope="Project" version="2">
     <Scope Scope="Faces Configuration Only"/>
-    <Scope Scope="Project"/>
+    <Scope Scope="Project">
+        <Node id="instructores/list-instructores.xhtml" x="900" y="150" zoom="true"/>
+        <Node id="cursos/list-cursos.xhtml" x="1150" y="150" zoom="true"/>
+        <Node id="fiestas/list-fiestas.xhtml" x="400" y="150" zoom="true"/>
+        <Node id="roles/form-roles.xhtml" x="900" y="450" zoom="true"/>
+        <Node id="arreglos/list-arreglos.xhtml" x="150" y="300" zoom="true"/>
+        <Node id="vestidos/list-vestidos.xhtml" x="1150" y="300" zoom="true"/>
+        <Node id="zapatillas/list-zapatillas.xhtml" x="650" y="300" zoom="true"/>
+        <Node id="cursos/form-cursos.xhtml" x="150" y="750" zoom="true"/>
+        <Node id="instructores/form-instructores.xhtml" x="650" y="150" zoom="true"/>
+        <Node id="usuarios/list-usuarios.xhtml" x="150" y="150" zoom="true"/>
+        <Node id="modulos/list-modulos.xhtml" x="400" y="450" zoom="true"/>
+        <Node id="templates/template.xhtml" x="1650" y="150" zoom="true"/>
+        <Node id="roles/list-roles.xhtml" x="400" y="300" zoom="true"/>
+        <Node id="index.xhtml" x="1400" y="150" zoom="true"/>
+        <Node id="vestidos/form-vestidos.xhtml" x="1400" y="300" zoom="true"/>
+        <Node id="arreglos/form-arreglos.xhtml" x="1150" y="450" zoom="true"/>
+        <Node id="*" x="476" y="736" zoom="true"/>
+        <Node id="login.xhtml" x="150" y="450" zoom="true"/>
+        <Node id="quinceanieras/list-quinceanieras.xhtml" x="611" y="646" zoom="true"/>
+        <Node id="fiestas/form-fiestas.xhtml" x="150" y="600" zoom="true"/>
+        <Node id="usuarios/form-usuarios.xhtml" x="900" y="300" zoom="true"/>
+        <Node id="modulos/form-modulos.xhtml" x="400" y="600" zoom="true"/>
+        <Node id="quinceanieras/form-quinceanieras.xhtml" x="570" y="929" zoom="true"/>
+        <Node id="zapatillas/form-zapatillas.xhtml" x="650" y="600" zoom="true"/>
+    </Scope>
     <Scope Scope="All Faces Configurations"/>
 </Scene>

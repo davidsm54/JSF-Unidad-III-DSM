@@ -8,32 +8,33 @@
         <title>#{str.listLadyTitle}</title>
     </h:head>
     <h:body>
-       <ui:composition template="/templates/template.xhtml">
+        <ui:composition template="/templates/template.xhtml">
             <ui:define name="contenido">
                 <h1>#{str.listLadyTitle}</h1>
+                
                 <h:form>
-                    <p:commandButton value="#{str.buttonAdd}"
-                                     action="#{quinceanieraBean.iniciar()}"></p:commandButton>                          
+                    <p:commandButton value="#{str.buttonAdd}" 
+                                     action="#{quinceanieraBean.iniciar()}"></p:commandButton>
                 </h:form>
                 
                 <p:dataTable value="#{quinceanieraBean.quinceanieras}" var="q">
                     <p:column headerText="#{str.action}">
-                
                         <h:form>
                             <p:commandButton value="#{str.buttonEdit}"
                                              action="#{quinceanieraBean.editar(q)}"></p:commandButton>
                         </h:form>
                     </p:column>
                     
-                    <p:column headerText="#{str.formLadyNamed}">
+                    <p:column headerText="#{str.formLadyName}">
                         <p:outputLabel value="#{q.nombreQuinceaniera}"></p:outputLabel>
-                    </p:column>
-                    <p:column headerText="#{str.formLadyDream}">
-                        <p:outputLabel value="#{q.suenio}"></p:outputLabel>
                     </p:column>
                     <p:column headerText="#{str.formLadyFamily}">
                         <p:outputLabel value="#{q.familia}"></p:outputLabel>
                     </p:column>
+                    <p:column headerText="#{str.formLadyDream}">
+                        <p:outputLabel value="#{q.suenio}"></p:outputLabel>
+                    </p:column>
+                    
                     <p:column headerText="#{str.formladyDress}">
                         <p:outputLabel value="#{q.vestido.marca}"></p:outputLabel>
                     </p:column>

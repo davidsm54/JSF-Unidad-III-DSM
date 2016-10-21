@@ -62,7 +62,7 @@
         </navigation-case>
         
         <navigation-case>
-            <from-outcome>Quinseañeras</from-outcome>
+            <from-outcome>Quinceanieras</from-outcome>
             <to-view-id>/quinceanieras/list-quinceanieras.xhtml</to-view-id>
         </navigation-case>
     </navigation-rule>
@@ -147,10 +147,10 @@
             <to-view-id>/modulos/form-modulos.xhtml</to-view-id>
         </navigation-case>
     </navigation-rule>
-     <!--Cursos-->
+    <!--Cursos-->
     
     
-      <!--Inicia la navegacion de instructores-->    
+    <!--Inicia la navegacion de instructores-->    
     <navigation-rule>
         <from-view-id>/instructores/form-instructores.xhtml</from-view-id>
     
@@ -178,7 +178,7 @@
             <to-view-id>/instructores/form-instructores.xhtml</to-view-id>
         </navigation-case>
         
-         <navigation-case>
+        <navigation-case>
             <from-outcome>Editar</from-outcome>
             <to-view-id>/instructores/form-instructores.xhtml</to-view-id>
         </navigation-case>
@@ -193,7 +193,7 @@
             <to-view-id>/cursos/form-cursos.xhtml</to-view-id>
         </navigation-case>
         
-         <navigation-case>
+        <navigation-case>
             <from-outcome>Editar</from-outcome>
             <to-view-id>/cursos/form-cursos.xhtml</to-view-id>
         </navigation-case>
@@ -219,7 +219,7 @@
     </navigation-rule>
     
     <!--arreglos-->
-     <navigation-rule>
+    <navigation-rule>
         <from-view-id>/arreglos/form-arreglos.xhtml</from-view-id>
     
         <navigation-case>
@@ -246,7 +246,7 @@
             <to-view-id>/arreglos/form-arreglos.xhtml</to-view-id>
         </navigation-case>
         
-         <navigation-case>
+        <navigation-case>
             <from-outcome>Editar</from-outcome>
             <to-view-id>/arreglos/form-arreglos.xhtml</to-view-id>
         </navigation-case>
@@ -261,7 +261,7 @@
             <to-view-id>/fiestas/form-fiestas.xhtml</to-view-id>
         </navigation-case>
         
-         <navigation-case>
+        <navigation-case>
             <from-outcome>Editar</from-outcome>
             <to-view-id>/fiestas/form-fiestas.xhtml</to-view-id>
         </navigation-case>
@@ -295,7 +295,7 @@
             <to-view-id>/vestidos/form-vestidos.xhtml</to-view-id>
         </navigation-case>
         
-         <navigation-case>
+        <navigation-case>
             <from-outcome>Editar</from-outcome>
             <to-view-id>/vestidos/form-vestidos.xhtml</to-view-id>
         </navigation-case>
@@ -329,7 +329,7 @@
             <to-view-id>/zapatillas/form-zapatillas.xhtml</to-view-id>
         </navigation-case>
         
-         <navigation-case>
+        <navigation-case>
             <from-outcome>Editar</from-outcome>
             <to-view-id>/zapatillas/form-zapatillas.xhtml</to-view-id>
         </navigation-case>
@@ -382,7 +382,7 @@
             <to-view-id>/quinceanieras/form-quinceanieras.xhtml</to-view-id>
         </navigation-case>
         
-         <navigation-case>
+        <navigation-case>
             <from-outcome>Editar</from-outcome>
             <to-view-id>/quinceanieras/form-quinceanieras.xhtml</to-view-id>
         </navigation-case>

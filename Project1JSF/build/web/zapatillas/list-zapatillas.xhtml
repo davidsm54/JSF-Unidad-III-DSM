@@ -8,11 +8,10 @@
         <title>#{str.listShoesTitle}</title>
     </h:head>
     <h:body>
-        
+       <h2>#{str.listShoesTitle}</h2>
         
         <ui:composition template="/templates/template.xhtml">
              <ui:define name="contenido">
-                 <h2>#{str.listShoesTitle}</h2>
                 <h:form>
                     <p:commandButton value="#{str.buttonAdd}" 
                                      action="#{zapatillaBean.iniciar()}"></p:commandButton>
@@ -30,11 +29,11 @@
                          <p:outputLabel value="#{z.nombreZapatilla}"></p:outputLabel>
                     </p:column>
                      
-                     <p:column headerText="#{str.formShoesColor}">
-                         <p:outputLabel value="#{z.color}"></p:outputLabel>
-                    </p:column>
                      <p:column headerText="#{str.formShoesMarc}">
                          <p:outputLabel value="#{z.marca}"></p:outputLabel>
+                    </p:column>
+                     <p:column headerText="#{str.formShoesColor}">
+                         <p:outputLabel value="#{z.color}"></p:outputLabel>
                     </p:column>
                      
                 </p:dataTable> 

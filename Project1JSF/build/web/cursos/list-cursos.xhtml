@@ -8,10 +8,11 @@
         <title>#{str.listCoursesHeader}</title>
     </h:head>
     <h:body>
-        <h2>#{str.listCoursesHeader}</h2>
+        
         
         <ui:composition template="/templates/template.xhtml">
              <ui:define name="contenido">
+                 <h2>#{str.listCoursesHeader}</h2>
                 <h:form>
                     <p:commandButton value="#{str.buttonAdd}" 
                                      action="#{cursoBean.iniciar()}"></p:commandButton>

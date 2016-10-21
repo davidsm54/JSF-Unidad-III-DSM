@@ -17,7 +17,8 @@ import javax.persistence.Table;
 @Entity 
 @Table(name = "quinceaniera")
 public class Quinceaniera implements Serializable{
-    @Id @GeneratedValue(strategy = GenerationType.IDENTITY) @Column(name = "id_quinceaniera")
+    @Id 
+    @GeneratedValue(strategy = GenerationType.IDENTITY) @Column(name = "id_quinceaniera")
     private Long idQuinceaniera;
     
     @Column(name = "nombre_quinceaniera", length = 100)

@@ -8,10 +8,9 @@
         <title>#{str.listPartiesTitle}</title>
     </h:head>
     <h:body>
-        <h2>#{str.listPartiesTitle}</h2>
-        
         <ui:composition template="/templates/template.xhtml">
              <ui:define name="contenido">
+                 <h1>#{str.listPartiesTitle}</h1>
                 <h:form>
                     <p:commandButton value="#{str.buttonAdd}" 
                                      action="#{fiestaBean.iniciar()}"></p:commandButton>
